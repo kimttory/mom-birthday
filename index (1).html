@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>박정자 여사님 칠순 잔치 🌸</title>
+
+<!-- OG 태그 (카카오톡 미리보기) -->
+<meta property="og:title" content="🌸 박정자 여사님 칠순 잔치">
+<meta property="og:description" content="주현 · 보현 · 기현 · 현정 올림 💕">
+<meta property="og:image" content="https://kimttory.github.io/mom-birthday/thumb_sunday.png">
+<meta property="og:image:width" content="600">
+<meta property="og:image:height" content="315">
+<meta property="og:url" content="https://kimttory.github.io/mom-birthday">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🌸 박정자 여사님 칠순 잔치">
+<meta name="twitter:description" content="주현 · 보현 · 기현 · 현정 올림 💕">
+<meta name="twitter:image" content="https://kimttory.github.io/mom-birthday/thumb_sunday.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { min-height: 100vh; }
+body {
+  background: #fff9f5;
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex; align-items: center; justify-content: center;
+  padding: 2rem 1rem; min-height: 100vh;
+}
+.petals { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; overflow: hidden; z-index: 0; }
+.petal { position: absolute; top: -30px; animation: fall linear infinite; }
+@keyframes fall {
+  0%   { transform: translateY(0) rotate(0deg) translateX(0); opacity: 0.85; }
+  100% { transform: translateY(100vh) rotate(400deg) translateX(50px); opacity: 0; }
+}
+.card {
+  position: relative; z-index: 1;
+  background: rgba(255,255,255,0.93);
+  backdrop-filter: blur(10px);
+  border-radius: 28px; max-width: 400px; width: 100%;
+  overflow: hidden;
+  box-shadow: 0 12px 48px rgba(220,130,130,0.18);
+  border: 1px solid rgba(255,182,193,0.3);
+}
+.header {
+  background: linear-gradient(160deg, #ffb7c5 0%, #ffd6e0 40%, #ffe8d6 100%);
+  padding: 2.5rem 1.5rem 2rem; text-align: center;
+}
+.header-icon { font-size: 52px; display: block; margin-bottom: 0.75rem; }
+.header-deco { font-size: 13px; letter-spacing: 0.3em; color: #c06080; margin-bottom: 0.5rem; }
+.header-name { font-family: 'Nanum Myeongjo', serif; font-size: 34px; font-weight: 800; color: #8b2252; margin-bottom: 0.2rem; text-shadow: 0 2px 8px rgba(200,80,120,0.15); }
+.header-title { font-family: 'Nanum Myeongjo', serif; font-size: 17px; color: #c06080; letter-spacing: 0.08em; }
+.body { padding: 1.75rem 1.5rem; }
+.invite-from {
+  text-align: center;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 15px; line-height: 2; color: #c06080;
+  margin-bottom: 1rem;
+}
+.poem { text-align: center; font-family: 'Nanum Myeongjo', serif; font-size: 15px; line-height: 2.1; color: #a05070; background: #fff0f3; border-radius: 16px; padding: 1.25rem; margin-bottom: 1.5rem; border-left: 3px solid #ffb7c5; }
+.info-wrap { margin-bottom: 1.5rem; }
+.info-item { display: flex; align-items: flex-start; gap: 14px; padding: 0.85rem 0; border-bottom: 1px dashed #ffd0da; }
+.info-item:last-child { border-bottom: none; }
+.info-emoji { font-size: 24px; width: 32px; text-align: center; flex-shrink: 0; margin-top: 2px; }
+.info-text { font-family: 'Nanum Myeongjo', serif; font-size: 17px; color: #6b3050; line-height: 1.6; }
+.info-text b { color: #8b2252; font-size: 18px; display: block; }
+.info-text small { font-size: 14px; color: #a07080; }
+.map-btn { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; background: #fff0f3; border: 1.5px solid #ffb7c5; border-radius: 20px; padding: 5px 14px; font-size: 13px; color: #c06080; font-family: 'Noto Sans KR', sans-serif; cursor: pointer; text-decoration: none; transition: background 0.15s; }
+.map-btn:hover { background: #ffe0e8; }
+.q-text { font-family: 'Nanum Myeongjo', serif; font-size: 21px; color: #8b2252; text-align: center; margin-bottom: 1.5rem; line-height: 1.5; }
+.btn-yes { width: 100%; padding: 22px; background: linear-gradient(135deg, #51cf66, #2f9e44); color: #fff; border: none; border-radius: 18px; font-size: 22px; font-family: 'Nanum Myeongjo', serif; cursor: pointer; margin-bottom: 12px; box-shadow: 0 4px 16px rgba(40,167,69,0.3); display: flex; align-items: center; justify-content: center; gap: 12px; }
+.btn-yes:active { transform: scale(0.97); }
+.btn-no { width: 100%; padding: 16px; background: #fff; color: #bbb; border: 1.5px solid #eee; border-radius: 18px; font-size: 17px; font-family: 'Noto Sans KR', sans-serif; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; }
+.screen { display: none; }
+.screen.active { display: block; }
+.ty { text-align: center; padding: 0.5rem 0; }
+.ty-big { font-size: 64px; display: block; margin-bottom: 1rem; animation: pop 0.5s cubic-bezier(.175,.885,.32,1.275); }
+@keyframes pop { from { transform: scale(0); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.ty-title { font-family: 'Nanum Myeongjo', serif; font-size: 26px; color: #2f9e44; margin-bottom: 0.5rem; }
+.ty-msg { font-family: 'Nanum Myeongjo', serif; font-size: 16px; color: #999; line-height: 1.9; margin-bottom: 1.5rem; }
+.count-box { background: #f0fff4; border-radius: 16px; padding: 1.25rem; border: 1px solid #b2f2bb; }
+.count-label { font-size: 13px; color: #888; margin-bottom: 6px; }
+.count-num { font-family: 'Nanum Myeongjo', serif; font-size: 48px; font-weight: 800; color: #2f9e44; }
+.count-unit { font-size: 16px; color: #666; }
+.sorry { text-align: center; padding: 0.5rem 0; }
+.sorry-big { font-size: 56px; display: block; margin-bottom: 1rem; }
+.sorry-title { font-family: 'Nanum Myeongjo', serif; font-size: 22px; color: #8b2252; margin-bottom: 0.5rem; }
+.sorry-msg { font-family: 'Nanum Myeongjo', serif; font-size: 15px; color: #bbb; line-height: 1.9; margin-bottom: 1.5rem; }
+.btn-back { background: none; border: 1.5px solid #ffd0da; border-radius: 12px; padding: 10px 24px; font-size: 14px; color: #cca0b0; cursor: pointer; font-family: 'Noto Sans KR', sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="petals" id="petals"></div>
+
+<div class="card">
+  <div class="header">
+    <span class="header-icon">🌸</span>
+    <p class="header-deco">✦ 칠순 잔치 초대 ✦</p>
+    <p class="header-name">박정자 여사님</p>
+    <p class="header-title">일흔 번째 봄을 맞이하며</p>
+  </div>
+
+  <div class="body">
+
+    <!-- 메인 화면 -->
+    <div id="screen-main" class="screen active">
+      <div class="invite-from">
+        저희 어머니의 칠순을 맞이하여<br>
+        자녀 주현 · 보현 · 기현 💕 현정이가<br>작은 자리를 마련했습니다
+      </div>
+      <div class="poem">
+        봄꽃처럼 환하게 살아오신<br>
+        칠십 년의 세월을<br>
+        함께 축하해 주세요 🌷
+      </div>
+      <div class="info-wrap">
+        <div class="info-item">
+          <span class="info-emoji">📅</span>
+          <div class="info-text">
+            <b>2026년 6월 14일 일요일</b>
+            낮 12시 점심 식사
+          </div>
+        </div>
+        <div class="info-item">
+          <span class="info-emoji">📍</span>
+          <div class="info-text">
+            <b>서산 미다옴</b>
+            <small>충남 서산시 서해로 3577 4층</small>
+            <a class="map-btn" href="https://map.naver.com/p/entry/place/1852791497?lng=126.4701718&lat=36.7815772&placePath=/home?fromPanelNum=1&additionalHeight=76&timestamp=202605261324&locale=ko&svcName=map_pcv5&entry=plt&searchType=place&c=15.00,0,0,2,dh" target="_blank">🗺️ 지도 보기</a>
+          </div>
+        </div>
+      </div>
+      <p class="q-text">소중한 자리에<br>함께해 주시겠어요? 🌸</p>
+      <button class="btn-yes" onclick="rsvpYes()">
+        <span style="font-size:28px">✅</span>
+        <span>참석할게요!</span>
+      </button>
+      <button class="btn-no" onclick="rsvpNo()">
+        <span>😢</span>
+        <span>아쉽지만 못 갑니다</span>
+      </button>
+    </div>
+
+    <!-- 감사 화면 -->
+    <div id="screen-yes" class="screen">
+      <div class="ty">
+        <span class="ty-big">🌸</span>
+        <p class="ty-title">고맙습니다!</p>
+        <p class="ty-msg">6월 14일 일요일 낮 12시<br>서산 미다옴에서 뵙겠습니다 💕</p>
+        <div class="count-box">
+          <p class="count-label">지금까지 참석 확인하신 분</p>
+          <span class="count-num" id="yes-count">-</span><span class="count-unit"> 명</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 불참 화면 -->
+    <div id="screen-no" class="screen">
+      <div class="sorry">
+        <span class="sorry-big">🙏</span>
+        <p class="sorry-title">알려주셔서 감사해요</p>
+        <p class="sorry-msg">아쉽지만<br>마음만으로도 충분합니다 🌸</p>
+        <button class="btn-back" onclick="goBack()">← 다시 선택하기</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Firebase -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore, doc, getDoc, setDoc, increment } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyBZKKCOk8equic4QDTVwzRNWAq5X8AAurA",
+    authDomain: "birthday-rsvp-dbff5.firebaseapp.com",
+    projectId: "birthday-rsvp-dbff5",
+    storageBucket: "birthday-rsvp-dbff5.firebasestorage.app",
+    messagingSenderId: "1009045125685",
+    appId: "1:1009045125685:web:08386082573c45a69d8f7c"
+  };
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const rsvpRef = doc(db, "rsvp", "count");
+  window.addRsvp = async function() {
+    try {
+      await setDoc(rsvpRef, { total: increment(1) }, { merge: true });
+      const snap = await getDoc(rsvpRef);
+      return snap.exists() ? (snap.data().total || 1) : 1;
+    } catch(e) { return null; }
+  };
+</script>
+
+<script>
+// 꽃잎
+const petalsEl = document.getElementById('petals');
+['🌸','🌺','🌷','🌼'].forEach(p => {
+  for (let j = 0; j < 4; j++) {
+    const el = document.createElement('div');
+    el.className = 'petal'; el.textContent = p;
+    el.style.left = Math.random() * 100 + '%';
+    el.style.animationDuration = (6 + Math.random() * 8) + 's';
+    el.style.animationDelay = (Math.random() * 12) + 's';
+    el.style.fontSize = (14 + Math.random() * 14) + 'px';
+    petalsEl.appendChild(el);
+  }
+});
+
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+async function rsvpYes() {
+  showScreen('screen-yes');
+  document.getElementById('yes-count').textContent = '...';
+  const tryAdd = async () => {
+    if (window.addRsvp) {
+      const total = await window.addRsvp();
+      document.getElementById('yes-count').textContent = total !== null ? total : '?';
+    } else {
+      setTimeout(tryAdd, 500);
+    }
+  };
+  tryAdd();
+}
+
+function rsvpNo() {
+  showScreen('screen-no');
+}
+
+function goBack() {
+  showScreen('screen-main');
+}
+</script>
+</body>
+</html>
